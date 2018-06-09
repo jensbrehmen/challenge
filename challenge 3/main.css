@@ -1,0 +1,816 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url(/Avenir.ttc) format("truetype");
+}
+
+html {
+  font-family: "Avenir", sans-serif;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Media Query 1 */
+@media only screen and (min-width: 1086px) {
+
+  /* Header */
+
+  .header {
+    background-image: url(images/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    height: 100vh;
+  }
+
+  .nav {
+    width: 100%;
+    height: 100px;
+  }
+
+  .navWrapper {
+    width: 85%;
+    margin: auto;
+  }
+
+  .navWrapper img {
+    height: 35px;
+    padding-top: 32.5px;
+  }
+
+  .right {
+    float: right;
+    padding-top: 6px;
+  }
+
+  #shop {
+    color: #4A4A4A;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 35px;
+    letter-spacing: 0.6px;
+  }
+
+  #collection, #blog {
+    font-weight: bold;
+    color: #B2B2B2;
+    font-size: 16px;
+    margin-right: 35px;
+    letter-spacing: 0.6px;
+  }
+
+  #contact {
+    font-weight: bold;
+    color: #B2B2B2;
+    font-size: 16px;
+    margin-right: 50px;
+    letter-spacing: 0.6px;
+  }
+
+  .right img {
+    height: 20px;
+  }
+
+  .right .menu {
+    display: none;
+  }
+
+  .headerWrapper {
+    padding-top: 235px;
+  }
+
+  .headerWrapper h1 {
+    font-size: 8vw;
+    font-weight: bold;
+    color: #4A4A4A;
+    text-align: center;
+    letter-spacing: 3.33px;
+  }
+
+  .navResponsive {
+    display: none;
+  }
+
+  /* About us */
+
+  .about {
+    width: 100%;
+  }
+
+  .aboutWrapper {
+    width: 85%;
+    margin: auto;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .aboutWrapper h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #4A4A4A;
+    letter-spacing: 2px;
+  }
+
+  .aboutUs {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 5%;
+  }
+
+  .text h3, .specialization h3 {
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 38px;
+    color: #9B9B9B;
+    letter-spacing: 0.75px;
+    margin-bottom: 20px;
+  }
+
+  .text p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #4A4A4A;
+    line-height: 30px;
+    letter-spacing: 0.45px;
+  }
+
+  .specialization img {
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .specialization h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4A4A4A;
+    letter-spacing: 1.29px;
+  }
+
+  .delivery, .support {
+    margin-bottom: 20px;
+  }
+
+  #aboutImage {
+    max-height: 360px;
+  }
+
+  /* Categories */
+  .categories {
+    width: 100%;
+    background-color: #F3F3F3;
+  }
+
+  .categoriesTitle {
+    width: 85%;
+    margin: auto;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .categoriesTitle h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #4A4A4A;
+    letter-spacing: 2px;
+  }
+
+  .categoriesWrapper {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+
+  .bathroom {
+    height: 500px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/bathroom.jpg);
+    background-size: cover;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+
+  .kitchen {
+    height: 500px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/kitchen.jpg);
+    background-size: cover;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+
+  .bedroom {
+    height: 500px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/bedroom.jpg);
+    background-size: cover;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+
+  .livingroom {
+    height: 500px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/livingroom.jpg);
+    background-size: cover;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+
+  .bathroom:hover {
+    background-image: url(images/bathroom.jpg);
+    transform: scale(1.1);
+  }
+
+  .kitchen:hover {
+    background-image: url(images/kitchen.jpg);
+    transform: scale(1.1);
+  }
+
+  .bedroom:hover {
+    background-image: url(images/bedroom.jpg);
+    transform: scale(1.1);
+  }
+
+  .livingroom:hover {
+    background-image: url(images/livingroom.jpg);
+    transform: scale(1.1);
+  }
+
+  .categoriesWrapper h3 {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 232.5px;
+  }
+
+
+  /* Footer */
+
+  .footer {
+    width: 100%;
+    background-color: #F3F3F3;
+    height: 85px;
+  }
+
+  .footerWrapper h4 {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    color: #9B9B9B;
+    padding-top: 33.5px;
+  }
+}
+
+/* Media Query 2 */
+@media only screen and (max-width: 1086px) and (min-width: 720px) {
+
+  /* Header */
+
+  .header {
+    background-image: url(images/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    height: 100vh;
+  }
+
+  .nav {
+    width: 100%;
+    height: 100px;
+  }
+
+  .navWrapper {
+    width: 85%;
+    margin: auto;
+  }
+
+  .navWrapper img {
+    height: 35px;
+    padding-top: 32.5px;
+  }
+
+  .right {
+    float: right;
+    padding-top: 6px;
+  }
+
+  #shop {
+    color: #4A4A4A;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 35px;
+    letter-spacing: 0.6px;
+  }
+
+  #collection, #blog {
+    font-weight: bold;
+    color: #B2B2B2;
+    font-size: 16px;
+    margin-right: 35px;
+    letter-spacing: 0.6px;
+  }
+
+  #contact {
+    font-weight: bold;
+    color: #B2B2B2;
+    font-size: 16px;
+    margin-right: 50px;
+    letter-spacing: 0.6px;
+  }
+
+  .right img {
+    height: 20px;
+  }
+
+  .right .menu {
+    display: none;
+  }
+
+  .headerWrapper {
+    padding-top: 235px;
+  }
+
+  .headerWrapper h1 {
+    font-size: 85px;
+    font-weight: bold;
+    color: #4A4A4A;
+    text-align: center;
+    letter-spacing: 3.33px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .navResponsive {
+    display: none;
+  }
+
+  /* About us */
+
+  .about {
+    width: 100%;
+  }
+
+  .aboutWrapper {
+    width: 85%;
+    margin: auto;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .aboutWrapper h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #4A4A4A;
+    letter-spacing: 2px;
+  }
+
+  .aboutUs {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 85%;
+    grid-gap: 50px;
+  }
+
+  .text h3, .specialization h3 {
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 38px;
+    color: #9B9B9B;
+    letter-spacing: 0.75px;
+    margin-bottom: 20px;
+  }
+
+  .text p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #4A4A4A;
+    line-height: 30px;
+    letter-spacing: 0.45px;
+  }
+
+  .specialization img {
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .specialization h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4A4A4A;
+    letter-spacing: 1.29px;
+  }
+
+  .delivery, .support {
+    margin-bottom: 20px;
+  }
+
+  #aboutImage {
+    max-height: 360px;
+  }
+
+  /* Categories */
+  .categories {
+    width: 100%;
+    background-color: #F3F3F3;
+  }
+
+  .categoriesTitle {
+    width: 85%;
+    margin: auto;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .categoriesTitle h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #4A4A4A;
+    letter-spacing: 2px;
+  }
+
+  .categoriesWrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .bathroom {
+    height: 500px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/bathroom.jpg);
+    background-size: cover;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+
+  .kitchen {
+    height: 500px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/kitchen.jpg);
+    background-size: cover;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+
+  .bedroom {
+    height: 500px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/bedroom.jpg);
+    background-size: cover;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+
+  .livingroom {
+    height: 500px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/livingroom.jpg);
+    background-size: cover;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+
+  .bathroom:hover {
+    background-image: url(images/bathroom.jpg);
+    transform: scale(1.1);
+  }
+
+  .kitchen:hover {
+    background-image: url(images/kitchen.jpg);
+    transform: scale(1.1);
+  }
+
+  .bedroom:hover {
+    background-image: url(images/bedroom.jpg);
+    transform: scale(1.1);
+  }
+
+  .livingroom:hover {
+    background-image: url(images/livingroom.jpg);
+    transform: scale(1.1);
+  }
+
+  .categoriesWrapper h3 {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 232.5px;
+  }
+
+
+  /* Footer */
+
+  .footer {
+    width: 100%;
+    background-color: #F3F3F3;
+    height: 85px;
+  }
+
+  .footerWrapper h4 {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    color: #9B9B9B;
+    padding-top: 33.5px;
+  }
+}
+
+/* Media Query 3 */
+@media only screen and (max-width: 720px) {
+
+  /* Header */
+
+  .header {
+    background-image: url(images/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    height: 100vh;
+  }
+
+  .nav {
+    width: 100%;
+    height: 100px;
+  }
+
+  .navWrapper {
+    width: 85%;
+    margin: auto;
+  }
+
+  .navWrapper img {
+    height: 35px;
+    padding-top: 32.5px;
+  }
+
+  .right {
+    float: right;
+    padding-top: 6px;
+  }
+
+  #shop {
+    color: #4A4A4A;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 35px;
+    letter-spacing: 0.6px;
+    display: none;
+  }
+
+  #collection, #blog {
+    font-weight: bold;
+    color: #B2B2B2;
+    font-size: 16px;
+    margin-right: 35px;
+    letter-spacing: 0.6px;
+    display: none;
+  }
+
+  #contact {
+    font-weight: bold;
+    color: #B2B2B2;
+    font-size: 16px;
+    margin-right: 50px;
+    letter-spacing: 0.6px;
+    display: none;
+  }
+
+  .right img {
+    height: 20px;
+    display: none;
+  }
+
+  .right .menu {
+    display: block;
+    height: 25px;
+  }
+
+  .headerWrapper {
+    padding-top: 235px;
+  }
+
+  .headerWrapper h1 {
+    font-size: 45px;
+    font-weight: bold;
+    color: #4A4A4A;
+    text-align: center;
+    letter-spacing: 3.33px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Responsive nav */
+  .open {
+    display: block;
+  }
+
+  .close {
+    float: right;
+    margin: 1em 1em 0 0;
+  }
+
+  .closeIcon {
+    height: 20px;
+  }
+
+  .navResponsive {
+    width: 0;
+    overflow-y: hidden;
+    height: 100vh;
+    z-index: 1;
+    position: fixed;
+    background-color: white;
+    transition: 0.5s;
+    display: block;
+  }
+
+  .navResponsive a {
+    clear: right;
+    color: #4A4A4A;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    padding: 1em 0;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+  }
+
+  #searchResponsive img {
+    height: 25px;
+  }
+
+  .navResponsive a:not(:first-child):hover {
+    color: #B2B2B2;
+  }
+
+  /* About us */
+
+  .about {
+    width: 100%;
+  }
+
+  .aboutWrapper {
+    width: 85%;
+    margin: auto;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .aboutWrapper h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #4A4A4A;
+    letter-spacing: 2px;
+  }
+
+  .aboutUs {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 85%;
+    grid-gap: 50px;
+  }
+
+  .text h3, .specialization h3 {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 38px;
+    color: #9B9B9B;
+    letter-spacing: 0.75px;
+    margin-bottom: 20px;
+  }
+
+  .text p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #4A4A4A;
+    line-height: 30px;
+    letter-spacing: 0.45px;
+  }
+
+  .specialization img {
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .specialization h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4A4A4A;
+    letter-spacing: 1.29px;
+  }
+
+  .delivery, .support {
+    margin-bottom: 20px;
+  }
+
+  #aboutImage {
+    width: 100%;
+  }
+
+  /* Categories */
+  .categories {
+    width: 100%;
+    background-color: #F3F3F3;
+  }
+
+  .categoriesTitle {
+    width: 85%;
+    margin: auto;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .categoriesTitle h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #4A4A4A;
+    letter-spacing: 2px;
+  }
+
+  .categoriesWrapper {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .bathroom {
+    height: 500px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/bathroom.jpg);
+    background-size: cover;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+
+  .kitchen {
+    height: 500px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/kitchen.jpg);
+    background-size: cover;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+
+  .bedroom {
+    height: 500px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/bedroom.jpg);
+    background-size: cover;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+
+  .livingroom {
+    height: 500px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/livingroom.jpg);
+    background-size: cover;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+
+  .bathroom:hover {
+    background-image: url(images/bathroom.jpg);
+  }
+
+  .kitchen:hover {
+    background-image: url(images/kitchen.jpg);
+  }
+
+  .bedroom:hover {
+    background-image: url(images/bedroom.jpg);
+  }
+
+  .livingroom:hover {
+    background-image: url(images/livingroom.jpg);
+  }
+
+  .categoriesWrapper h3 {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 232.5px;
+  }
+
+
+  /* Footer */
+
+  .footer {
+    width: 100%;
+    background-color: #F3F3F3;
+    height: 85px;
+  }
+
+  .footerWrapper h4 {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    color: #9B9B9B;
+    padding-top: 33.5px;
+  }
+
+}

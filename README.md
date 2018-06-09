@@ -7,4 +7,4 @@ In my opinion, I found out that the best way to learn something new, in this cas
 
 ## Live demo
 ### Challenge 3
-Available soon.
+Click <a target="_blank" href="http://www.powit.be/challenge3">here</a> to check out the live demo.

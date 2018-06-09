@@ -674,7 +674,7 @@ a {
   .aboutUs {
     margin-top: 40px;
     display: grid;
-    grid-template-columns: 85%;
+    grid-template-columns: 100%;
     grid-gap: 50px;
   }
 
@@ -729,7 +729,7 @@ a {
   }
 
   .categoriesTitle h2 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     color: #4A4A4A;
     letter-spacing: 2px;

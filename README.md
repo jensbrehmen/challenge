@@ -4,3 +4,7 @@ Here you're able to find the finished web development challenges of <a target="_
 
 ## Practice
 In my opinion, I found out that the best way to learn something new, in this case front-end web development, is to copy from other people who already have an experience. This is the way how I learned programming myself by looking to how others did it and then trying to do the same. I recommend everyone trying out these Web Dev Challenges, the guidelines and the Sketch files are in the project files. Click <a href="http://www.linktr.ee/thecodingsultan">here</a> to check them out.
+
+## Live demo
+### Challenge 3
+Click <a target="_blank" href="http://www.powit.be/chalenge3">here</a> to see how the the result of challenge 3 looks.
